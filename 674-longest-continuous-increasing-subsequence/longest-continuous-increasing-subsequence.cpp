@@ -7,7 +7,9 @@ public:
                 if(nums[i]>nums[i-1]){
                     count++;
                 }
-            
+                else if(nums.empty()){
+                    return 0;
+                }
                 else{
                     count = 1;
                 }
